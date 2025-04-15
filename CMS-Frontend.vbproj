@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7C4EA2AD-5171-436A-ACB0-20017171827C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CMS_Frontend.LoginForm</StartupObject>
+    <RootNamespace>CMS_Frontend</RootNamespace>
+    <AssemblyName>CMS-Frontend</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CMS-Frontend.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CMS-Frontend.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.6.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessRoleadmin.Designer.vb">
+      <DependentUpon>AccessRoleadmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccessRoleadmin.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccessRoleofficer.Designer.vb">
+      <DependentUpon>AccessRoleofficer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccessRoleofficer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccessRoleprof.Designer.vb">
+      <DependentUpon>AccessRoleprof.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccessRoleprof.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccessRolestudent.Designer.vb">
+      <DependentUpon>AccessRolestudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccessRolestudent.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Announcement.Designer.vb">
+      <DependentUpon>Announcement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Announcement.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AnnouncementFormat.Designer.vb">
+      <DependentUpon>AnnouncementFormat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AnnouncementFormat.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calendar.Designer.vb">
+      <DependentUpon>Calendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom\CircularPictureBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Delete.Designer.vb">
+      <DependentUpon>Delete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Delete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentFormat.Designer.vb">
+      <DependentUpon>DocumentFormat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentFormat.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Documents.Designer.vb">
+      <DependentUpon>Documents.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Documents.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinalExit.Designer.vb">
+      <DependentUpon>FinalExit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FinalExit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalMainForm.Designer.vb">
+      <DependentUpon>FinalMainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FinalMainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GradeAdminView.Designer.vb">
+      <DependentUpon>GradeAdminView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GradeAdminView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Grades.Designer.vb">
+      <DependentUpon>Grades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Grades.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GradeStudentView.Designer.vb">
+      <DependentUpon>GradeStudentView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GradeStudentView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MemberFormat.Designer.vb">
+      <DependentUpon>MemberFormat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MemberFormat.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModifiedNotifFormat.Designer.vb">
+      <DependentUpon>ModifiedNotifFormat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModifiedNotifFormat.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NoteFormat.Designer.vb">
+      <DependentUpon>NoteFormat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NoteFormat.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="noteNotifFormat.Designer.vb">
+      <DependentUpon>noteNotifFormat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="noteNotifFormat.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Notes.Designer.vb">
+      <DependentUpon>Notes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Notes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NoteUploadConfirmation.Designer.vb">
+      <DependentUpon>NoteUploadConfirmation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NoteUploadConfirmation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NoteView.Designer.vb">
+      <DependentUpon>NoteView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NoteView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="announcementNotifFormat.Designer.vb">
+      <DependentUpon>announcementNotifFormat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="announcementNotifFormat.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Notification.Designer.vb">
+      <DependentUpon>Notification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Notification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="officerFormat.Designer.vb">
+      <DependentUpon>officerFormat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="officerFormat.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.vb">
+      <DependentUpon>Profile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section.Designer.vb">
+      <DependentUpon>Section.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Section.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sectionFormat.Designer.vb">
+      <DependentUpon>sectionFormat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sectionFormat.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Upload.Designer.vb">
+      <DependentUpon>Upload.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Upload.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserProfile.Designer.vb">
+      <DependentUpon>UserProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfile.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="waitingUserCtrl.Designer.vb">
+      <DependentUpon>waitingUserCtrl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="waitingUserCtrl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AccessRoleadmin.resx">
+      <DependentUpon>AccessRoleadmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccessRoleofficer.resx">
+      <DependentUpon>AccessRoleofficer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccessRoleprof.resx">
+      <DependentUpon>AccessRoleprof.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccessRolestudent.resx">
+      <DependentUpon>AccessRolestudent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Announcement.resx">
+      <DependentUpon>Announcement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnnouncementFormat.resx">
+      <DependentUpon>AnnouncementFormat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar.resx">
+      <DependentUpon>Calendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete.resx">
+      <DependentUpon>Delete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentFormat.resx">
+      <DependentUpon>DocumentFormat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents.resx">
+      <DependentUpon>Documents.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalExit.resx">
+      <DependentUpon>FinalExit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalMainForm.resx">
+      <DependentUpon>FinalMainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradeAdminView.resx">
+      <DependentUpon>GradeAdminView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grades.resx">
+      <DependentUpon>Grades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradeStudentView.resx">
+      <DependentUpon>GradeStudentView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberFormat.resx">
+      <DependentUpon>MemberFormat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifiedNotifFormat.resx">
+      <DependentUpon>ModifiedNotifFormat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoteFormat.resx">
+      <DependentUpon>NoteFormat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="noteNotifFormat.resx">
+      <DependentUpon>noteNotifFormat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notes.resx">
+      <DependentUpon>Notes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoteUploadConfirmation.resx">
+      <DependentUpon>NoteUploadConfirmation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoteView.resx">
+      <DependentUpon>NoteView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="announcementNotifFormat.resx">
+      <DependentUpon>announcementNotifFormat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notification.resx">
+      <DependentUpon>Notification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="officerFormat.resx">
+      <DependentUpon>officerFormat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section.resx">
+      <DependentUpon>Section.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sectionFormat.resx">
+      <DependentUpon>sectionFormat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Upload.resx">
+      <DependentUpon>Upload.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserProfile.resx">
+      <DependentUpon>UserProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="waitingUserCtrl.resx">
+      <DependentUpon>waitingUserCtrl.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\UCC-CSD-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UCC-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ringing Bell Notification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ellipse 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ellipsewithoutline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new google.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UCC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redCross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toRIght.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate_next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate_prev.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dropdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dropdown_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendarDark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendarWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pullup-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pullupWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pullup_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black_pullup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white-pullup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate_next_blck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\officerIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\studentIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonBackGround.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonBackgroundHighlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spinningLogo.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
